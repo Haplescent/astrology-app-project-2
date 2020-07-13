@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+nav {
+  background: rgb(143, 55, 55);
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.page-footer {
+  background: url(https://i.pinimg.com/originals/79/f3/0f/79f30fa0fd1caee1facbb0da8b109ba9.jpg);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#brand-logo {
+  list-style: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 3vh;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url(https://media0.giphy.com/media/yjGdFYs9VmJcJCqKIM/giphy.gif?cid=ecf05e478d5182bcbd39b4b5eb07d4f61b5a673fbdb39134&rid=giphy.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  width: 40%;
+  height: 70%;
+  background: #333;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  border-radius: 10%;
+  margin-top: 10px;
+}
+
+.column {
+  margin: 10px;
+  width: 30%;
+  height: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+.content-welcome {
+  width: 90%;
+  height: 70%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* Joseph's styling below */
+
+form.signup,
+form.login {
+  margin-top: 50px;
+}
+
+.content-leo {
+  width: 90%;
+  height: 70%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-leo {
+  width: 28%;
+  height: 90%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+.column-leo:hover {
+  width: 30%;
+  height: 100%;
+}
+
+.column-leo:hover img {
+  transform: rotate(30deg);
+  transition: 2.5s ease;
+}
+.column-leo:clickable img {
+  transform: rotateY(180deg);
+}
+.column-leo .horoscope {
+  width: 100%;
+  height: 70%;
+  background: #2c3e50;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.column-leo .horoscope img {
+  width: 60%;
+}
+
+.column-leo .bar {
+  width: 100%;
+  height: 10%;
+  background: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #333;
+}
+
+.column-leo .text {
+  width: 100%;
+  height: 20%;
+  background: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.column-leo .text h4 {
+  background-image: linear-gradient(to left, black, darkgray, blue, white);
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 70%;
+  text-align: center;
+  height: auto;
+}
