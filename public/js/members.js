@@ -5,8 +5,7 @@ $(document).ready(function() {
   $.get("/api/user_data").then(function(data) {
     $(".member-name").text(data.email);
     const name = data.firstname;
-    $(".nav-wrapper").append(` <a href="" id="brand-logo">Welcome ${name}!</a>`)
-
+    $(".nav-wrapper").append(` <a href="" id="brand-logo">Welcome ${name}!</a>`);
   });
 
   $.ajax({ 
