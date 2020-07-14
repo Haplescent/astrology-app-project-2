@@ -50,4 +50,7 @@ module.exports = function(app) {
       });
     }
   });
+
+  //Route for deleting user from database and client side
+ 
 };
