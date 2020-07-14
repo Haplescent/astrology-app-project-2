@@ -1,17 +1,20 @@
 $(document).ready(function() {
+
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   $.get("/api/user_data").then(function(data) {
     $(".member-name").text(data.email);
+    const name = data.firstname;
+    $(".nav-wrapper").append(` <a href="" id="brand-logo">Welcome ${name}!</a>`);
   });
 
-  $.ajax({
-    type:"GET",
+  $.ajax({ 
     url:`http://sandipbgt.com/theastrologer/api/horoscope/leo/today`,
     dataType:"json"
   }).then( (res) =>
   {
-    console.log(res.horoscope);
+    console.log(res);
+    
     const horoscope = res.horoscope;
     $(".container").append(`
     <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
