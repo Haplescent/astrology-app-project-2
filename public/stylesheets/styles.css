@@ -59,8 +59,8 @@ header {
 }
 
 .content {
-  width: 40%;
-  height: 70%;
+  width: 40vh;
+  height: 60vh;
   background: #333;
   position: fixed;
   display: flex;
@@ -105,7 +105,7 @@ form.login {
 }
 
 .card {
-  width: 50vh;
+  width: 40vh;
   height: 60vh;
   background: transparent;
   transform-style: preserve-3d;
