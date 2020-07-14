@@ -24,13 +24,22 @@
 </head>
 
 <body>
-  <nav>
+  <nav  style="padding:0px 10px; position: fixed;">
     <div class="nav-wrapper">
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="/logout">Logout</a></li>
+      <a href="#" class="brand-logo"></a>
+  
+      <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+        <i class="material-icons">menu</i>
+      </a>
+  
+      <ul class="right hide-on-med-and-down "  >
+        <li><a href="./login.html">Logout</a></li>
       </ul>
     </div>
   </nav>
+  <ul class="sidenav" id="mobile-nav">
+        <li><a href="./login.html">Logout</a></li>
+  </ul>
   <header>
     <div class="bg">
 
