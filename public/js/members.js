@@ -11,10 +11,9 @@ $(document).ready(function() {
   $.ajax({ 
     url:`http://sandipbgt.com/theastrologer/api/horoscope/leo/today`,
     dataType:"json"
-  }).then((res) =>
+  }).then( (res) =>
   {
     console.log(res.horoscope);
-    
     const horoscope = res.horoscope;
     $(".container").append(`
     <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
