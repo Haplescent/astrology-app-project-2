@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  color: #fff;
+}
+
+.card {
+  background-color: #333;
+  opacity: 0.8;
+}
+
+.nav-wrapper {
+  background-color: #333;
+}
+
+.page-footer {
+  background: url(https://i.pinimg.com/originals/79/f3/0f/79f30fa0fd1caee1facbb0da8b109ba9.jpg);
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
