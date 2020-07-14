@@ -129,7 +129,7 @@ form.login {
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.8;
-  transition: 1.75s ease;
+  
 }
 
 .back-card {
@@ -146,7 +146,7 @@ form.login {
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.8;
-  transition: 1.75s ease;
+  
   transform: rotateY(180deg);
   align-items: center;
   justify-content: center;
@@ -161,7 +161,6 @@ form.login {
 .card:hover {
  
   transform: rotateY(180deg);
-  transition: 1.75s ease;
 }
 
 .front-card:hover img {
