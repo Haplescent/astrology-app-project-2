@@ -4,10 +4,22 @@ $(document).ready(function () {
   $.get("/api/user_data").then(function (data) {
     // personal greeting
     const name = data.firstname;
+    $("#button").on("click",function() {
+      $.ajax({
+        type:"DELETE",
+        url: `/api/user/${name}`,
+      }).then(()=>
+      {  window.location.replace("/");
+        
+    }) .catch(function (err) {
+      console.log(err);
+    });
+    });
+   
     $(".nav-wrapper").append(
       ` <a href="" id="brand-logo">Welcome ${name}!</a>`
     );
-
+  
     // formatting birthday
     console.log(data.birthday);
 
@@ -62,5 +74,11 @@ $(document).ready(function () {
     </div>`);
       console.log(horoscope);
     });
+
+    console.log(name);
+    
   });
+
+
+
 });
