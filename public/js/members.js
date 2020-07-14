@@ -56,6 +56,8 @@ $(document).ready(function () {
       console.log(res);
 
       const horoscope = res.horoscope;
+      const horoscopeEdit = horoscope.slice(0, -59);
+
       $("#horoscope").append(`
         <div class="bg">
               <div class="card">
@@ -68,12 +70,10 @@ $(document).ready(function () {
                   </div>
                 </div>
                 <div class="back-card">
-                  <h5>${horoscope}</h5>
+                  <p>${horoscopeEdit}</p>
                 </div>
               </div>
             </div>`);
-
-      console.log(horoscope);
     });
   });
 });
