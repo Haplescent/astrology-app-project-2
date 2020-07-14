@@ -8,6 +8,10 @@ $(document).ready(function() {
     $(".nav-wrapper").append(` <a href="" id="brand-logo">Welcome ${name}!</a>`);
   });
 
+  $.ajax({
+    type: "DELETE",
+    url: "/api/user/:name",
+  })
   $.ajax({ 
     url:`http://sandipbgt.com/theastrologer/api/horoscope/leo/today`,
     dataType:"json"
