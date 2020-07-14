@@ -13,7 +13,8 @@ $(document).ready(function() {
     dataType:"json"
   }).then( (res) =>
   {
-    console.log(res.horoscope);
+    console.log(res);
+    
     const horoscope = res.horoscope;
     $(".container").append(`
     <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
