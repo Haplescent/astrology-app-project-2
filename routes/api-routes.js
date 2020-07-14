@@ -45,7 +45,8 @@ module.exports = function(app) {
       res.json({
         email: req.user.email,
         id: req.user.id,
-        birthday: req.user.birthday
+        birthday: req.user.birthday,
+        firstname: req.user.firstname
       });
     }
   });
