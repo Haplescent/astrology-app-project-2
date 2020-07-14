@@ -1,4 +1,6 @@
 $(document).ready(function () {
+  // mobile responive nav for materialize
+  $(".sidenav").sidenav();
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   $.get("/api/user_data").then(function (data) {
@@ -35,44 +37,55 @@ $(document).ready(function () {
     function zodiac(day, month) {
       const zodiac = [
         "",
-        "capricorn",
-        "aquarius",
-        "pisces",
-        "aries",
-        "taurus",
-        "gemini",
-        "cancer",
-        "leo",
-        "virgo",
-        "libra",
-        "scorpio",
-        "sagittarius",
-        "capricorn",
+        "Capricorn",
+        "Aquarius",
+        "Pisces",
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer",
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio",
+        "Sagittarius",
+        "Capricorn",
       ];
       const lastDay = ["", 19, 18, 20, 20, 21, 21, 22, 22, 21, 22, 21, 20, 19];
       return day > lastDay[month] ? zodiac[month * 1 + 1] : zodiac[month];
     }
     const sign = zodiac(parseInt(bdayDay), parseInt(bdayMonth));
-    console.log(sign);
+    const signLowerCase = sign.toLowerCase();
+
+    console.log(signLowerCase);
 
     // API call
     $.ajax({
       type: "GET",
-      url: `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today`,
+      url: `http://sandipbgt.com/theastrologer/api/horoscope/${signLowerCase}/today`,
       dataType: "json",
     }).then((res) => {
       console.log(res);
 
       const horoscope = res.horoscope;
-      $(".container").append(`
-        <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
-         <div class="card-header">Header</div>
-          <div class="card-body">
-            <h5 class="card-title">Dark card title</h5>
-             <p class="card-text">${horoscope}</p>
-        </div>
-    </div>`);
-      console.log(horoscope);
+      const horoscopeEdit = horoscope.slice(0, -59);
+
+      $("#horoscope").append(`
+        <div class="bg">
+              <div class="card">
+                <div class="front-card">
+                  <div class="horoscope">
+                    <img src="./images/leo.png">
+                  </div>
+                  <div class="bar">
+                    <h4>${sign}</h4>
+                  </div>
+                </div>
+                <div class="back-card">
+                  <p>${horoscopeEdit}</p>
+                </div>
+              </div>
+            </div>`);
     });
 
     console.log(name);
