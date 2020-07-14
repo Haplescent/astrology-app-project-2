@@ -2,6 +2,13 @@ $(document).ready(function () {
   // This file just does a GET request to figure out which user is logged in
   // and updates the HTML on the page
   $.get("/api/user_data").then(function (data) {
+    // personal greeting
+    const name = data.firstname;
+    $(".nav-wrapper").append(
+      ` <a href="" id="brand-logo">Welcome ${name}!</a>`
+    );
+
+    // formatting birthday
     console.log(data.birthday);
 
     const birthday = data.birthday;
@@ -12,6 +19,7 @@ $(document).ready(function () {
     console.log(bdayMonth);
     console.log(bdayDay);
 
+    // zodiac function
     function zodiac(day, month) {
       const zodiac = [
         "",
@@ -35,6 +43,7 @@ $(document).ready(function () {
     const sign = zodiac(parseInt(bdayDay), parseInt(bdayMonth));
     console.log(sign);
 
+    // API call
     $.ajax({
       type: "GET",
       url: `http://sandipbgt.com/theastrologer/api/horoscope/${sign}/today`,
