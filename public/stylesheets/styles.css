@@ -73,14 +73,14 @@ header {
 
 .column {
   margin: 10px;
-  width: 30%;
+  width: 100%;
   height: 100%;
   background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 10px;
+  border-radius: 10%;
   overflow: hidden;
   opacity: 0.8;
 }
@@ -106,7 +106,7 @@ form.login {
 
 .card {
   width: 50vh;
-  height:60vh;
+  height: 60vh;
   background: transparent;
   transform-style: preserve-3d;
   position: fixed;
@@ -129,7 +129,6 @@ form.login {
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.8;
-  
 }
 
 .back-card {
@@ -138,7 +137,7 @@ form.login {
   height: 100%;
   flex-wrap: wrap;
   display: flex;
-  background:#2c3e50;
+  background: #2c3e50;
   backface-visibility: hidden;
   align-items: center;
   transform-style: preserve-3d;
@@ -146,7 +145,7 @@ form.login {
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.8;
-  
+
   transform: rotateY(180deg);
   align-items: center;
   justify-content: center;
@@ -154,19 +153,17 @@ form.login {
   text-align: center;
 }
 
-.back-card h5
-{
+.back-card h5 {
   color: white;
 }
 .card:hover {
- 
   transform: rotateY(180deg);
 }
 
 .front-card:hover img {
-   transform: rotate(30deg);
-  transition: 2.5s ease; 
-} 
+  transform: rotate(30deg);
+  transition: 2.5s ease;
+}
 
 .front-card .horoscope {
   width: 100%;
@@ -182,7 +179,6 @@ form.login {
 }
 
 .front-card .bar {
-
   width: 100%;
   height: 20%;
   background: #fff;
