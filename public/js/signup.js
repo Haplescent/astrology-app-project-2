@@ -1,4 +1,6 @@
-$(document).ready(function() {
+$(document).ready(function () {
+  // mobile responive nav for materialize
+  $(".sidenav").sidenav();
   // Getting references to our form and input
   var signUpForm = $("form.signup");
   var emailInput = $("input#email-input");
@@ -6,7 +8,7 @@ $(document).ready(function() {
   var birthdayInput = $("#birthday-input");
   var firstnameInput = $("#firstname-input");
   // When the signup button is clicked, we validate the email and password are not blank
-  signUpForm.on("submit", function(event) {
+  signUpForm.on("submit", function (event) {
     event.preventDefault();
     var userData = {
       email: emailInput.val().trim(),
@@ -15,11 +17,21 @@ $(document).ready(function() {
       firstname: firstnameInput.val().trim(),
     };
 
-    if (!userData.email || !userData.password || !userData.birthday || !userData.firstname) {
+    if (
+      !userData.email ||
+      !userData.password ||
+      !userData.birthday ||
+      !userData.firstname
+    ) {
       return;
     }
     // If we have an email and password, run the signUpUser function
-    signUpUser(userData.email, userData.password, userData.birthday, userData.firstname);
+    signUpUser(
+      userData.email,
+      userData.password,
+      userData.birthday,
+      userData.firstname
+    );
     emailInput.val("");
     passwordInput.val("");
     birthdayInput.val("");
@@ -33,9 +45,9 @@ $(document).ready(function() {
       email: email,
       password: password,
       birthday: birthday,
-      firstname: firstname
+      firstname: firstname,
     })
-      .then(function(data) {
+      .then(function (data) {
         window.location.replace("/members");
         // If there's an error, handle it by throwing up a bootstrap alert
       })
