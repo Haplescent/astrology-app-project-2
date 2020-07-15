@@ -10,12 +10,17 @@ $(document).ready(function () {
       $.ajax({
         type:"DELETE",
         url: `/api/user/${name}`,
-      }).then(()=>
-      {  window.location.replace("/");
+        success:()=> {
+          window.location.replace('/');  
+          
+      }
+    })
+    //   .then(()=>
+    //   { 
+    //     console.log(name);
+    //     window.location.replace("/");
         
-    }) .catch(function (err) {
-      console.log(err);
-    });
+    // });
     });
    
     $(".nav-wrapper").append(

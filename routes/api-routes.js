@@ -6,6 +6,7 @@ module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
+  
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
     res.json(req.user);
   });
@@ -52,20 +53,26 @@ module.exports = function(app) {
   });
 
   //Route for deleting user from database and client side
+
  app.delete("/api/user/:name",(req,res)=>{
-  
+  console.log("This is", req.params.name);
+
    db.User.destroy(
      {
        where: {
         firstname: req.params.name,
+        
        }
-     }) .then(function() {
-      res.logout();
-      res.redirect("/");
+     }).then(function() {
+      
+      res.sendStatus(200);
+      console.log({msg: "Your account was deleted"});
       })
     .catch(function(err) {
-      res.status(401).json(err);
-    
+      // res.status(401).json(err);
+      console.log(err);
     });
+
  })
+
 };
