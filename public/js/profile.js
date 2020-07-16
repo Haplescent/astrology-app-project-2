@@ -13,7 +13,7 @@ $(document).ready(function() {
         
         <img src="./images/leo.png"/>
         <span class="card-title"></span>
-        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        <a id="addprofilepic" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
      
         <div class="name"> ${firstname}</div>
       <div class="email">Email: ${email}</div>
@@ -35,6 +35,13 @@ $(document).ready(function() {
         });
       }
         
+      });
+
+      $("#addprofilepic").on("click",function () {
+        $.ajax({
+          type:"POST",
+          url: `/api/user/upload`,
+        }).then((res)=>console.log(res));
       });
 });
     

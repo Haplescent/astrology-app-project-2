@@ -13,6 +13,7 @@
   "dependencies": {
     "bcryptjs": "2.4.3",
     "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
     "express-session": "^1.16.1",
     "moment": "^2.27.0",
     "mysql2": "^1.6.5",
