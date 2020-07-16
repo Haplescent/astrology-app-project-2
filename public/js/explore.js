@@ -213,22 +213,41 @@ $(document).ready(function () {
     console.log(signs[2].description);
 
     for (i = 0; i < signs.length; i++) {
-      $("#horoscope").append(`
-      <div class="bg">
-            <div class="card">
-              <div class="front-card">
-                <div class="horoscope">
-                  <img src="./images/${signs[i].signLowerCase}.png">
-                </div>
-                <div class="bar">
-                  <h4>${signs[i].sign}</h4>
-                </div>
-              </div>
-              <div class="back-card white-text">
-                <p id="horoscopeParagraph">${signs[i].description}</p>
-              </div>
+      console.log(i);
+      if (sign === signs[i].sign) {
+        $("#exploreHoroscope").append(`
+ 
+        <div class="card sign-border">
+          <div class="front-card">
+            <div class="horoscope">
+              <img src="./images/${signs[i].signLowerCase}.png">
             </div>
-          </div>`);
+            <div class="bar">
+              <h4>${signs[i].sign}</h4>
+            </div>
+          </div>
+          <div class="back-card white-text">
+            <p id="horoscopeParagraph">${signs[i].description}</p>
+          </div>
+        </div>
+    `);
+      } else {
+        $("#exploreHoroscope").append(`
+        <div class="card">
+          <div class="front-card">
+            <div class="horoscope">
+              <img src="./images/${signs[i].signLowerCase}.png">
+            </div>
+            <div class="bar">
+              <h4>${signs[i].sign}</h4>
+            </div>
+          </div>
+          <div class="back-card white-text">
+            <p id="horoscopeParagraph">${signs[i].description}</p>
+          </div>
+        </div>
+    `);
+      }
     }
   });
 });
