@@ -85,8 +85,9 @@ $(document).ready(function () {
                     <h4>${sign}</h4>
                   </div>
                 </div>
-                <div class="back-card">
-                  <p class="white-text">${horoscopeEdit}</p>
+                <div class="back-card white-text">
+                <h5>Today's Horoscope</h5>
+                  <p id="horoscopeParagraph">${horoscopeEdit}</p>
                 </div>
               </div>
             </div>`);
