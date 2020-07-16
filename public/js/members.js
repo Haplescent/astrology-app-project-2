@@ -6,27 +6,26 @@ $(document).ready(function () {
   $.get("/api/user_data").then(function (data) {
     // personal greeting
     const name = data.firstname;
-    $("#button").on("click",function() {
+    $("#button").on("click", function () {
       $.ajax({
-        type:"DELETE",
+        type: "DELETE",
         url: `/api/user/${name}`,
-        success:()=> {
-          window.location.replace('/');  
-          
-      }
-    })
-    //   .then(()=>
-    //   { 
-    //     console.log(name);
-    //     window.location.replace("/");
-        
-    // });
+        success: () => {
+          window.location.replace("/");
+        },
+      });
+      //   .then(()=>
+      //   {
+      //     console.log(name);
+      //     window.location.replace("/");
+
+      // });
     });
-   
+
     $(".nav-wrapper").append(
       ` <a href="" id="brand-logo">Welcome ${name}!</a>`
     );
-  
+
     // formatting birthday
     console.log(data.birthday);
 
@@ -80,7 +79,7 @@ $(document).ready(function () {
               <div class="card">
                 <div class="front-card">
                   <div class="horoscope">
-                    <img src="./images/leo.png">
+                    <img src="./images/${signLowerCase}.png">
                   </div>
                   <div class="bar">
                     <h4>${sign}</h4>
@@ -94,9 +93,5 @@ $(document).ready(function () {
     });
 
     console.log(name);
-    
   });
-
-
-
 });
