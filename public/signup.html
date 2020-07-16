@@ -24,80 +24,76 @@
 <body>
 
   <main>
-    <div class="mainContent">
-        <div class="parallax-container">
-          <div class="parallax">
-            <img
-              src="https://media0.giphy.com/media/yjGdFYs9VmJcJCqKIM/giphy.gif?cid=ecf05e478d5182bcbd39b4b5eb07d4f61b5a673fbdb39134&rid=giphy.gif" />
-              <header>
-                <nav >
-                  <div class="nav-wrapper">
-                    <a href="#" class="brand-logo">Astrology</a>
+    <div class="mainContent bg">
+
+          <header>
+            <nav >
+              <div class="nav-wrapper">
+                <a href="#" class="brand-logo">Astrology</a>
+              </div>
+            </nav>
+          </header>
+          <div class="row">
+            <div class="col s12 m7">
+              <div class="card large" >
+                <div class="card-content">
+                  <span class="card-title">Signup Form</span>
+                  <form class="signup">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="email-input" placeholder="Email" />
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="password-input" placeholder="Password" />
+                    </div>
+  
+                    <div class="form-group">
+                      <label for="exampleInputBirthday1">Birthday</label>
+                      <input type="date" class="form-control" id="birthday-input" placeholder="Birthday" />
+                    </div>
+  
+                    <div class="form-group">
+                      <label for="exampleInputFirstname1">First Name</label>
+                      <input type="text" class="form-control" id="firstname-input" placeholder="First Name" />
+                    </div>
+  
+                    <div style="display: none;" id="alert" class="alert alert-danger" role="alert">
+                      <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                      <span class="sr-only">Error:</span> <span class="msg"></span>
+                    </div>
+                    <button type="submit" class="btn btn-default">Sign Up</button>
+                  </form>
+                </div>
+                <div class="card-action">
+                <a style = "color: #fff;"href="/login">Or login here</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  </main>
+  <footer class="page-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Astrology App</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                   </div>
-                </nav>
-              </header>
-              <div class="row">
-                <div class="col s12 m7">
-                  <div class="card small" style="height: 460px">
-                    <div class="card-content">
-                      <span class="card-title">Signup Form</span>
-                      <form class="signup">
-                        <div class="form-group">
-                          <label for="exampleInputEmail1">Email address</label>
-                          <input type="email" class="form-control" id="email-input" placeholder="Email" />
-                        </div>
-                        <div class="form-group">
-                          <label for="exampleInputPassword1">Password</label>
-                          <input type="password" class="form-control" id="password-input" placeholder="Password" />
-                        </div>
-      
-                        <div class="form-group">
-                          <label for="exampleInputBirthday1">Birthday</label>
-                          <input type="date" class="form-control" id="birthday-input" placeholder="Birthday" />
-                        </div>
-      
-                        <div class="form-group">
-                          <label for="exampleInputFirstname1">First Name</label>
-                          <input type="text" class="form-control" id="firstname-input" placeholder="First Name" />
-                        </div>
-      
-                        <div style="display: none;" id="alert" class="alert alert-danger" role="alert">
-                          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-                          <span class="sr-only">Error:</span> <span class="msg"></span>
-                        </div>
-                        <button type="submit" class="btn btn-default">Sign Up</button>
-                      </form>
-                    </div>
-                    <div class="card-action">
-                    <a style = "color: #fff;"href="/login">Or login here</a>
-                    </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Useful Links</h5>
+                    <ul>
+                      <li><a class="grey-text text-lighten-3" href=https://github.com/josephtawil>Joseph Tawil Github</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://github.com/meianna">Meianna Oeser Github</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://github.com/Haplescent">John Merrit Github</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://github.com/darias321">Danielle Arias Github</a></li>
+                    </ul>
                   </div>
                 </div>
               </div>
-          </div>
-        </div>
-    </div>
-  </main>
+            </footer>
 
-    <footer class="page-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col l6 s12">
-            <h5 class="white-text">Astrology App</h5>
-            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-          </div>
-          <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Useful Links</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href=https://github.com/josephtawil>Joseph Tawil Github</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/meianna">Meianna Oeser Github</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/Haplescent">John Merrit Github</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/darias321">Danielle Arias Github</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    
 
 
   
