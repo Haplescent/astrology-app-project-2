@@ -96,6 +96,7 @@ body {
   
 
 .card img {
+  border-style: solid;
   width: 50% ;
   height: 50%;
   object-fit: cover;
