@@ -64,8 +64,12 @@ module.exports = function(app) {
         
        }
      }).then(function() {
-      
+       //removes user from session
+      req.logout();
+      //needed for sending back a response to the user when running this delete router
       res.sendStatus(200);
+      //redirect doesn't work in a delete router
+      // res.redirect("/");
       console.log({msg: "Your account was deleted"});
       })
     .catch(function(err) {
