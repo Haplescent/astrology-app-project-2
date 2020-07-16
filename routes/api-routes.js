@@ -1,7 +1,7 @@
 // Requiring our models and passport as we've configured it
 var db = require("../models");
 var passport = require("../config/passport");
-
+var upload = require("express-fileupload");
 module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
@@ -77,6 +77,12 @@ module.exports = function(app) {
       console.log(err);
     });
 
- })
+ });
+
+ // router to allow user to upload files from personal computer
+
+ app.post("/api/user/upload", (req,res)=>{
+
+ });
 
 };
