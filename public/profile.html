@@ -4,8 +4,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- <link rel="stylesheet" href="./stylesheets/profile.css"/> -->
+ 
+ <!--Google's styling css-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+  rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheets/profile.css"/>
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
@@ -16,8 +19,8 @@
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-  <link rel="stylesheet" href="./stylesheets/styles.css" />
+<!-- 
+  <link rel="stylesheet" href="./stylesheets/styles.css" /> -->
 
 
 
@@ -42,11 +45,24 @@
   <ul class="sidenav" id="mobile-nav">
         <li><a href="./logout">Logout</a></li>
   </ul>
-  <header id="horoscope">
-   <div class="bg">
-     <div class="content"></div>
-   </div>
-  </header>
+  
+  
+    <div class="bg">
+      <div class="container">
+        <div class="card">
+          <img src="./images/leo.png"/>
+          <!-- <i class="material-icons">person_add</i> -->
+         <div class="name"> Joseph</div>
+          <div class="email">Email: adsgasga@gamil.com</div>
+          <div class="password">Password: 3112</div>
+          <div class="birthday">Birthday: 09/12/1222</div>
+          <button id= "button" class="btn waves-effect waves-light red" type="submit" name="action">Delete
+    <i class="material-icons right">delete_forever</i>
+  </button>
+        </div>
+      </div>
+    </div>
+
 
   <footer class="page-footer">
     <div class="container">
@@ -72,7 +88,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
+<script src="./js/members.js"></script>
 </body>
 
 </html>
