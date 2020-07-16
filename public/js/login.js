@@ -1,7 +1,6 @@
 $(document).ready(function () {
   // mobile responive nav for materialize
   $(".sidenav").sidenav();
-  $(".parallax").parallax();
   // Getting references to our form and inputs
   var loginForm = $("form.login");
   var emailInput = $("input#email-input");
