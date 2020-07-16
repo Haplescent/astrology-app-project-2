@@ -86,7 +86,7 @@ $(document).ready(function () {
                   </div>
                 </div>
                 <div class="back-card">
-                  <p>${horoscopeEdit}</p>
+                  <p class="white-text">${horoscopeEdit}</p>
                 </div>
               </div>
             </div>`);
