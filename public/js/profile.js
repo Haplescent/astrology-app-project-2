@@ -14,7 +14,10 @@ $(document).ready(function() {
         <img src="./images/leo.png"/>
         <span class="card-title"></span>
         <a id="addprofilepic" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-     
+        <form method="POST" enctype="multipart/form-data" action="/profile">
+            <input type="file" name="filename">
+            <input type="submit" value="upload">
+        </form>
         <div class="name"> ${firstname}</div>
       <div class="email">Email: ${email}</div>
       <div class="birthday">Birthday: ${birthday}</div>
@@ -37,12 +40,12 @@ $(document).ready(function() {
         
       });
 
-      $("#addprofilepic").on("click",function () {
-        $.ajax({
-          type:"POST",
-          url: `/api/user/upload`,
-        }).then((res)=>console.log(res));
-      });
+      // $("#addprofilepic").on("click",function () {
+      //   $.ajax({
+      //     type:"POST",
+      //     url: `/api/user/upload`,
+      //   }).then((res)=>console.log(res));
+      // });
 });
     
 

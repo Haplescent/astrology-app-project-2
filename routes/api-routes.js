@@ -6,7 +6,9 @@ module.exports = function(app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
-  
+  app.use(upload());
+
+
   app.post("/api/login", passport.authenticate("local"), function(req, res) {
     res.json(req.user);
   });
@@ -79,9 +81,13 @@ module.exports = function(app) {
 
  });
 
+
  // router to allow user to upload files from personal computer
 
- app.post("/api/user/upload", (req,res)=>{
+ app.post("/profile", (req,res)=>{
+if(req.files){
+  console.log(req.files);
+}
 
  });
 
