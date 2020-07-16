@@ -96,8 +96,8 @@ body {
   
 
 .card img {
-  width: 200px ;
-  height: 200px;
+  width: 50% ;
+  height: 50%;
   object-fit: cover;
   border-radius: 50%;
   margin: 0 auto 20px auto;
@@ -109,5 +109,5 @@ body {
   font-weight:bold
 }
 .birthday {
-  padding-bottom:15px;
+  padding-bottom:20px;
 }
