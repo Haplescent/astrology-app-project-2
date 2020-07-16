@@ -11,7 +11,7 @@ main {
 }
 
 nav {
-  background: rgb(143, 55, 55);
+  background: rgb(255, 230, 128);
   height: 10vh;
   width: 100%;
   position: fixed;
@@ -231,5 +231,5 @@ form.login {
 }
 
 .sign-border {
-  border: 1px solid white;
+  border: 1px solid rgb(255, 230, 128);
 }
