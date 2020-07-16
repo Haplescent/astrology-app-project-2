@@ -24,6 +24,7 @@ $(document).ready(function() {
     </div>`);
 
     $("#button").on("click", function () {
+      if(confirm("Are you sure you want to delete")===true) {
         $.ajax({
           type: "DELETE",
           url: `/api/user/${firstname}`,
@@ -32,6 +33,8 @@ $(document).ready(function() {
             
           },
         });
+      }
+        
       });
 });
     
