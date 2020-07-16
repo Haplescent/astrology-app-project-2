@@ -1,6 +1,5 @@
 $(document).ready(function () {
   // mobile responive nav for materialize
-  $(".parallax").parallax();
   $(".sidenav").sidenav();
   // Getting references to our form and input
   var signUpForm = $("form.signup");
