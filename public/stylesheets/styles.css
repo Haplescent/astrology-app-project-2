@@ -145,12 +145,13 @@ form.login {
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.8;
-
   transform: rotateY(180deg);
   align-items: center;
   justify-content: center;
   display: flex;
   text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .back-card h5 {
