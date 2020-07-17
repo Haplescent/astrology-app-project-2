@@ -3,34 +3,29 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
-
 main {
   flex: 1 0 auto;
   color: #fff;
 }
-
 .card {
   background-color: #333;
   opacity: 0.8;
 }
-
 .nav-wrapper {
   background: rgb(143, 55, 55);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-
 .bg {
   width: 100%;
-  height: 50rem;
+  height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(https://media0.giphy.com/media/yjGdFYs9VmJcJCqKIM/giphy.gif?cid=ecf05e478d5182bcbd39b4b5eb07d4f61b5a673fbdb39134&rid=giphy.gif);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .page-footer {
   background: url(https://i.pinimg.com/originals/79/f3/0f/79f30fa0fd1caee1facbb0da8b109ba9.jpg);
-  height: 100%;
+  height: 100vh;
   width: 100%;
   position: relative;
   background-repeat: no-repeat;
