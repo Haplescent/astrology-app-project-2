@@ -4,10 +4,6 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
-    url(https://media0.giphy.com/media/yjGdFYs9VmJcJCqKIM/giphy.gif?cid=ecf05e478d5182bcbd39b4b5eb07d4f61b5a673fbdb39134&rid=giphy.gif);
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 main {
@@ -15,11 +11,10 @@ main {
 }
 
 nav {
-  background: rgb(255, 230, 128);
+  background: rgb(143, 55, 55);
   height: 10vh;
   width: 100%;
   position: fixed;
-  z-index: 1;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -27,11 +22,9 @@ nav {
   background: url(https://i.pinimg.com/originals/79/f3/0f/79f30fa0fd1caee1facbb0da8b109ba9.jpg);
   height: 100vh;
   width: 100%;
-  clear: fixed;
-  position: sticky;
+  position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  bottom: -5;
 }
 
 #brand-logo {
@@ -48,24 +41,9 @@ nav ul li a {
   text-decoration: none;
 }
 
-#exploreHoroscope {
+header {
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 5%;
-  padding-top: 5%;
-}
-
-#horoscope {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 5%;
-  padding-top: 5%;
 }
 
 .bg {
@@ -75,14 +53,14 @@ nav ul li a {
     url(https://media0.giphy.com/media/yjGdFYs9VmJcJCqKIM/giphy.gif?cid=ecf05e478d5182bcbd39b4b5eb07d4f61b5a673fbdb39134&rid=giphy.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  /* display: flex; */
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .content {
-  width: 40vh;
-  height: 60vh;
+  width: 40%;
+  height: 70%;
   background: #333;
   position: fixed;
   display: flex;
@@ -95,14 +73,14 @@ nav ul li a {
 
 .column {
   margin: 10px;
-  width: 100%;
+  width: 30%;
   height: 100%;
   background-color: #333;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-radius: 10%;
+  border-radius: 10px;
   overflow: hidden;
   opacity: 0.8;
 }
@@ -126,94 +104,64 @@ form.login {
   margin-top: 50px;
 }
 
-.card {
-  width: 40vh;
-  height: 60vh;
-  background: transparent;
-  transform-style: preserve-3d;
-  /* position: fixed; */
-  /* display: flex; */
-  transition: all 1.75s ease;
+.content-leo {
+  width: 90%;
+  height: 70%;
+  position: fixed;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1%;
 }
 
-.front-card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.column-leo {
+  width: 28%;
+  height: 90%;
   flex-wrap: wrap;
-  backface-visibility: hidden;
   display: flex;
   align-items: center;
-  transform-style: preserve-3d;
   justify-content: center;
   border-radius: 10px;
   overflow: hidden;
   opacity: 0.8;
+  transition: 0.2s ease;
 }
 
-.back-card {
-  position: absolute;
-  width: 100%;
+.column-leo:hover {
+  width: 30%;
   height: 100%;
-  flex-wrap: wrap;
-  display: flex;
-  background: #2c3e50;
-  backface-visibility: hidden;
-  align-items: center;
-  transform-style: preserve-3d;
-  justify-content: center;
-  border-radius: 10px;
-  overflow: hidden;
-  opacity: 0.8;
-  transform: rotateY(180deg);
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  text-align: center;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
-.back-card h5 {
-  color: white;
-}
-.card:hover {
-  transform: rotateY(180deg);
-}
-
-.front-card:hover img {
+.column-leo:hover img {
   transform: rotate(30deg);
   transition: 2.5s ease;
 }
-
-.front-card .horoscope {
+.column-leo:clickable img {
+  transform: rotateY(180deg);
+}
+.column-leo .horoscope {
   width: 100%;
-  height: 80%;
+  height: 70%;
   background: #2c3e50;
   align-items: center;
   justify-content: center;
   display: flex;
 }
 
-.front-card .horoscope img {
+.column-leo .horoscope img {
   width: 60%;
 }
 
-.front-card .bar {
+.column-leo .bar {
   width: 100%;
-  height: 20%;
+  height: 10%;
   background: #fff;
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #333;
 }
-/* 
-.front-card .text {
+
+.column-leo .text {
   width: 100%;
   height: 20%;
   background: #f0f0f0;
@@ -221,19 +169,11 @@ form.login {
   align-items: center;
   display: flex;
 }
-.front-card .text h4 {
+.column-leo .text h4 {
   background-image: linear-gradient(to left, black, darkgray, blue, white);
   -webkit-background-clip: text;
   color: transparent;
   width: 70%;
   text-align: center;
   height: auto;
-} */
-
-#horoscopeParagraph {
-  margin-top: -45px;
-}
-
-.sign-border {
-  border: 1px solid rgb(255, 230, 128);
 }
