@@ -60,7 +60,6 @@ $(document).ready(function () {
       const horoscopeEdit = horoscope.slice(0, -59);
 
       $("#horoscope").append(`
-        <div class="bg">
               <div class="card">
                 <div class="front-card">
                   <div class="horoscope">
@@ -75,7 +74,7 @@ $(document).ready(function () {
                   <p id="horoscopeParagraph">${horoscopeEdit}</p>
                 </div>
               </div>
-            </div>`);
+            `);
     });
 
     console.log(name);
