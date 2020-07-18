@@ -2,11 +2,10 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
     url(https://media0.giphy.com/media/yjGdFYs9VmJcJCqKIM/giphy.gif?cid=ecf05e478d5182bcbd39b4b5eb07d4f61b5a673fbdb39134&rid=giphy.gif);
-  background-repeat: no-repeat;
+  background-repeat: repeat 1;
   background-size: 100%;
 }
 
