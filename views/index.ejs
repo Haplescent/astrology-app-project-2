@@ -5,9 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
  
- <!--Google's styling css-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-  rel="stylesheet">
+ 
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
@@ -19,7 +17,7 @@
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
- 
+  <link rel="stylesheet" href="./stylesheets/profile.css"/>
 
 
 
@@ -47,7 +45,25 @@
   
   
     <div class="bg">
-      <div id ="profile" class="container">
+      <div  class="container">
+        <%=typeof msg != 'undefined' ? msg: '' %>
+        <div id ="profile" class="card">
+            
+        <img  src="<%= typeof file != 'undefined' ? file: '' %>" class="responsive-img"/>
+        <span class="card-title"></span>
+      <a id="addprofilepic" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+      <form action="/profile" method="POST" enctype="multipart/form-data">
+            <div class="file-field input-field">
+              <div class="btn grey">
+                <span>Upload Image</span>
+                <input name="myImage" type="file">
+              </div>
+              <div class="file-path-wrapper">
+                <input class="file-path validate" type="text">
+              </div>
+            </div>
+        <button class="btn" type="submit">Upload</button>
+          </form>
         <!-- <div class="card">
           <img src="./images/leo.png"/>
           
@@ -59,7 +75,7 @@
     <i class="material-icons right">delete_forever</i>
   </button>
         </div> -->
-       
+        </div>
       </div>
     </div>
 
@@ -88,7 +104,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
+<script src="./js/profile.js"></script>
 </body>
 
 </html>
