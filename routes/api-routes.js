@@ -63,7 +63,6 @@ function checkFileType(file,cb) {
       password: req.body.password,
       birthday: req.body.birthday,
       firstname: req.body.firstname,
-      image: req.file.filename
     })
       .then(function() {
         res.redirect(307, "/api/login");
@@ -160,6 +159,10 @@ function checkFileType(file,cb) {
     }
   });
 
+ });
+
+ app.get("/api/profilepic",(req,res)=>{
+    res.json({image: 'uploads' + req.user.image});
  });
 
 };
