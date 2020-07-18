@@ -14,7 +14,7 @@ main {
 }
 
 nav {
-  background: rgb(255, 230, 128);
+  background: #171528;
   height: 10vh;
   width: 100%;
   position: fixed;
@@ -23,14 +23,10 @@ nav {
 }
 
 .page-footer {
-  background: url(https://i.pinimg.com/originals/79/f3/0f/79f30fa0fd1caee1facbb0da8b109ba9.jpg);
-  height: 100vh;
-  width: 100%;
-  clear: fixed;
+  background: #171528;
   position: sticky;
   background-repeat: no-repeat;
   background-size: cover;
-  bottom: -5;
 }
 
 #brand-logo {
