@@ -125,7 +125,7 @@ function checkFileType(file,cb) {
 
  // router to allow user to upload files from personal computer
 
- app.post("/profile", (req,res)=>{
+ app.post("/upload", (req,res)=>{
   
   upload(req,res,(err)=>{
     if(err) {
@@ -162,7 +162,7 @@ function checkFileType(file,cb) {
  });
 
  app.get("/api/profilepic",(req,res)=>{
-    res.json({image: 'uploads' + req.user.image});
+    res.json({image: req.user.image});
  });
 
 };

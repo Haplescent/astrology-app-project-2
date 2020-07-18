@@ -49,10 +49,10 @@
         <%=typeof msg != 'undefined' ? msg: '' %>
         <div id ="profile" class="card">
             
-        <img  src="<%= typeof file != 'undefined' ? file: '' %>" class="responsive-img"/>
+        <img  src="<%= typeof file != 'undefined' ? file : '' %>" class="responsive-img"/>
         <span class="card-title"></span>
       <a id="addprofilepic" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-      <form action="/profile" method="POST" enctype="multipart/form-data">
+      <form action="/upload" method="POST" enctype="multipart/form-data">
             <div class="file-field input-field">
               <div class="btn grey">
                 <span>Upload Image</span>
