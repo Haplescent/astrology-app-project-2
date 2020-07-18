@@ -45,7 +45,7 @@ $(document).ready(function () {
       email: email,
       password: password,
       birthday: birthday,
-      firstname: firstname,
+      firstname: firstname
     })
       .then(function (data) {
         window.location.replace("/members");
