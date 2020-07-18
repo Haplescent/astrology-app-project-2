@@ -216,14 +216,15 @@ $(document).ready(function () {
       console.log(i);
       if (sign === signs[i].sign) {
         $("#exploreHoroscope").append(`
- 
         <div class="card sign-border">
           <div class="front-card">
             <div class="horoscope">
               <img src="./images/${signs[i].signLowerCase}.png">
             </div>
-            <div class="bar">
+            <div class="explore-bar">
               <h4>${signs[i].sign}</h4>
+              
+              <h5>${signs[i].dates}</h5>
             </div>
           </div>
           <div class="back-card white-text">
@@ -238,8 +239,10 @@ $(document).ready(function () {
             <div class="horoscope">
               <img src="./images/${signs[i].signLowerCase}.png">
             </div>
-            <div class="bar">
-              <h4>${signs[i].sign}</h4>
+            <div class="explore-bar">
+            <h4>${signs[i].sign}</h4>
+            
+            <h5>${signs[i].dates}</h5>
             </div>
           </div>
           <div class="back-card white-text">

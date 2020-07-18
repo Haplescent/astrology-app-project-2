@@ -11,7 +11,7 @@ main {
 }
 
 nav {
-  background: rgb(143, 55, 55);
+  background: rgb(255, 230, 128);
   height: 10vh;
   width: 100%;
   position: fixed;
@@ -30,7 +30,8 @@ nav {
 #brand-logo {
   list-style: none;
   display: inline-block;
-  color: #fff;
+  /* color: #fff; */
+  color: #0f0919;
   font-size: 30px;
   margin-left: 3vh;
 }
