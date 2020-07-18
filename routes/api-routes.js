@@ -125,7 +125,7 @@ function checkFileType(file,cb) {
 
  // router to allow user to upload files from personal computer
 
- app.post("/upload", (req,res)=>{
+ app.post("/profile", (req,res)=>{
   
   upload(req,res,(err)=>{
     if(err) {
