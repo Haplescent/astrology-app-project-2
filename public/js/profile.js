@@ -31,10 +31,7 @@ $(document).ready(function() {
       }
         
       });
-      $.ajax({
-        type: "GET",
-        url:`/api/profilepic`
-      }).then((res)=>console.log(res));      
+         
 });
     
 });
