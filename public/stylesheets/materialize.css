@@ -12,7 +12,7 @@ main {
   opacity: 0.8;
 }
 .nav-wrapper {
-  background: #ffdb4d;
+  background: #171528;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .bg {
@@ -24,10 +24,8 @@ main {
   background-size: cover;
 }
 .page-footer {
-  background: url(https://i.pinimg.com/originals/79/f3/0f/79f30fa0fd1caee1facbb0da8b109ba9.jpg);
-  height: 100vh;
-  width: 100%;
-  position: relative;
+  background: #171528;
+  position: sticky;
   background-repeat: no-repeat;
   background-size: cover;
 }
