@@ -58,7 +58,9 @@ header {
   align-items: center;
 }
 .container {
-  padding: 20px;
+  width: 100%;
+  height: 100%;
+  padding-top: 60px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -84,8 +86,8 @@ form.login {
 }
 
 .card {
-  width: 50vh;
-  height: 60vh;
+  width: 70vh;
+  height: 80vh;
   font-family: sans-serif;
   text-align: center;
   box-shadow: 0 0 10px rgb(255, 255, 255);
