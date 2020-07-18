@@ -84,7 +84,7 @@ $(document).ready(function () {
         mantra: "I Am",
         colors: "Red & Mustard",
         description:
-          "Aries is the first sign of the zodiac, and that’s pretty much how those born under this sign see themselves: first. Aries are the leaders of the pack, first in line to get things going. Whether or not everything gets done is another question altogether, for an Aries prefers to initiate rather than to complete. Do you have a project needing a kick-start? Call an Aries, by all means. The leadership displayed by Aries is most impressive, so don’t be surprised if they can rally the troops against seemingly insurmountable odds—they have that kind of personal magnetism.",
+          "Aries is the first sign of the zodiac, and that’s pretty much how those born under this sign see themselves: first. Aries are the leaders of the pack, first in line to get things going. Whether or not everything gets done is another question altogether, for an Aries prefers to initiate rather than to complete. The leadership displayed by Aries is most impressive, so don’t be surprised if they can rally the troops against seemingly insurmountable odds—they have that kind of personal magnetism.",
       },
       {
         sign: "Taurus",
@@ -139,7 +139,7 @@ $(document).ready(function () {
         mantra: "I Analyze",
         colors: "Tan & Warm yellow",
         description:
-          "Virgo is the sixth sign of the zodiac, to be exact, and that’s the way Virgos like it: exacting. Those born under this horoscope sign are forever the butt of jokes for being so picky and critical (and they can be), but their ‘attention to detail’ is for a reason: to help others. Virgos, more than any other zodiac sign, were born to serve, and it gives them great joy. They are also tailor-made for the job, since common Virgo traits are being industrious, methodical, and efficient. The sense of duty borne by these folks is considerable, and it ensures that they will always work for the greater good.",
+          "Virgo is the sixth sign of the zodiac, to be exact, and that’s the way Virgos like it: exacting. Those born under this horoscope sign are forever the butt of jokes for being so picky and critical (and they can be), but their ‘attention to detail’ is for a reason: to help others. Virgos, more than any other zodiac sign, were born to serve, and it gives them great joy. The sense of duty borne by these folks is considerable, and it ensures that they will always work for the greater good.",
       },
       {
         sign: "Libra",
@@ -161,7 +161,7 @@ $(document).ready(function () {
         mantra: "I Transform",
         colors: "Red & Black",
         description:
-          "Scorpio is the eighth sign of the zodiac, and that shouldn’t be taken lightly—nor should Scorpios! Those born under this sign are dead serious in their mission to learn about others. There’s no fluff or chatter for Scorpios, either; these folks will zero-in on the essential questions, gleaning the secrets that lie within. The Scorpio zodiac sign concerns itself with beginnings and endings, and is unafraid of either. They also travel in a world that is black and white and has little use for gray. The curiosity of Scorpios is immeasurable, which may be why they are such adept investigators.",
+          "Scorpio is the eighth sign of the zodiac, and that shouldn’t be taken lightly—nor should Scorpios! Those born under this sign are dead serious in their mission to learn about others. There’s no fluff or chatter for Scorpios, either; these folks will zero-in on the essential questions, gleaning the secrets that lie within. The Scorpio zodiac sign concerns itself with beginnings and endings, and is unafraid of either. They also travel in a world that is black and white and has little use for gray.",
       },
       {
         sign: "Sagittarius",
@@ -172,7 +172,7 @@ $(document).ready(function () {
         mantra: "I See",
         colors: "Maroon & Navy blue",
         description:
-          "Sagittarius, the ninth sign of the zodiac, is the home of the wanderers of the zodiac. It’s not a mindless ramble for these folks, either. Sags are truth-seekers, and the best way for them to do this is to hit the road, talk to others and get some answers. Knowledge is key to these folks since it fuels their broad-minded approach to life. Those born with a Sagittarius zodiac sign are keenly interested in philosophy and religion, and they find that these disciplines aid their internal quest. At the end of the day, what Sagittarius wants most is to know the meaning of life, and to accomplish this while feeling free and easy.",
+          "Sagittarius, the ninth sign of the zodiac, is the home of the wanderers of the zodiac. It’s not a mindless ramble for these folks, either. Sags are truth-seekers, and the best way for them to do this is to hit the road, talk to others and get some answers. Knowledge is key to these folks since it fuels their broad-minded approach to life. Sags are keenly interested in philosophy and religion, and they find that these disciplines aid their internal quest. At the end of the day, what Sagittarius wants most is to know the meaning of life, and to accomplish this while feeling free and easy.",
       },
       {
         sign: "Capricorn",
@@ -194,7 +194,7 @@ $(document).ready(function () {
         mantra: "I Know",
         colors: "Silver & Blue",
         description:
-          "Aquarius is the eleventh sign of the zodiac, and Aquarians are the perfect representatives for the Age of Aquarius. Those born under this horoscope sign have the social conscience needed to carry us into the new millennium. Those of the Aquarius zodiac sign are humanitarian, philanthropic, and keenly interested in making the world a better place. Along those lines, they’d like to make the world work better, which is why they focus much of their energy on our social institutions and how they work (or don’t work).",
+          "Aquarius is the eleventh sign of the zodiac, and Aquarians are the perfect representatives for the Age of Aquarius. Aquarians have the social conscience needed to carry us into the new millennium. Those of the Aquarius zodiac sign are humanitarian, philanthropic, and keenly interested in making the world a better place. Along those lines, they’d like to make the world work better, which is why they focus much of their energy on our social institutions and how they work.",
       },
       {
         sign: "Pisces",
@@ -227,6 +227,8 @@ $(document).ready(function () {
             </div>
           </div>
           <div class="back-card white-text">
+          <p>Symbol: ${signs[i].symbol}</p>
+          <p class="sign-info">Ruling Planet: ${signs[i].rulingPlanet}</p
             <p id="horoscopeParagraph">${signs[i].description}</p>
           </div>
         </div>
@@ -244,6 +246,8 @@ $(document).ready(function () {
             </div>
           </div>
           <div class="back-card white-text">
+            <p>Symbol: ${signs[i].symbol}</p>
+            <p class="sign-info">Ruling Planet: ${signs[i].rulingPlanet}</p
             <p id="horoscopeParagraph">${signs[i].description}</p>
           </div>
         </div>
