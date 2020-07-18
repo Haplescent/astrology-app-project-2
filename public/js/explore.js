@@ -222,8 +222,8 @@ $(document).ready(function () {
               <img src="./images/${signs[i].signLowerCase}.png">
             </div>
             <div class="explore-bar">
-              <h4>${signs[i].sign}</h4>              
-              <h5>${signs[i].dates}</h5>
+              <h5>${signs[i].sign}</h5>              
+              <h6>${signs[i].dates}</h6>
             </div>
           </div>
           <div class="back-card white-text">
@@ -239,8 +239,8 @@ $(document).ready(function () {
               <img src="./images/${signs[i].signLowerCase}.png">
             </div>
             <div class="explore-bar">
-            <h4>${signs[i].sign}</h4>
-            <h5>${signs[i].dates}</h5>
+            <h5>${signs[i].sign}</h5>
+            <h6>${signs[i].dates}</h6>
             </div>
           </div>
           <div class="back-card white-text">
