@@ -62,7 +62,8 @@ function checkFileType(file,cb) {
       email: req.body.email,
       password: req.body.password,
       birthday: req.body.birthday,
-      firstname: req.body.firstname
+      firstname: req.body.firstname,
+      image: req.file.filename
     })
       .then(function() {
         res.redirect(307, "/api/login");
@@ -142,9 +143,17 @@ function checkFileType(file,cb) {
         });
       }
       else{
-        res.render('index', {
-          msg: 'File uploaded',
-          file: `uploads/${req.file.filename}`
+        db.User.update({
+          image: req.file.filename,
+        },{
+        where: {
+          firstname: req.user.firstname
+        }
+      }).then(()=>{
+          res.render('index', {
+            msg: 'File uploaded',
+            file: `uploads/${req.file.filename}`
+          });
         });
       }
 
