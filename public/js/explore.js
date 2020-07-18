@@ -222,8 +222,7 @@ $(document).ready(function () {
               <img src="./images/${signs[i].signLowerCase}.png">
             </div>
             <div class="explore-bar">
-              <h4>${signs[i].sign}</h4>
-              
+              <h4>${signs[i].sign}</h4>              
               <h5>${signs[i].dates}</h5>
             </div>
           </div>
@@ -241,7 +240,6 @@ $(document).ready(function () {
             </div>
             <div class="explore-bar">
             <h4>${signs[i].sign}</h4>
-            
             <h5>${signs[i].dates}</h5>
             </div>
           </div>

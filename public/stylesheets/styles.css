@@ -15,7 +15,7 @@ main {
 }
 
 nav {
-  background: rgb(255, 230, 128);
+  background: #ffdb4d;
   height: 10vh;
   width: 100%;
   position: fixed;
