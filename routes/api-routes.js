@@ -144,7 +144,20 @@ module.exports = function (app) {
               },
             }
           ).then(() => {
-            res.redirect("/members");
+            const newUser = {
+              email: req.user.email,
+              id: req.user.id,
+              birthday: req.user.birthday,
+              firstname: req.user.firstname,
+              image: req.file.filename,
+            };
+            req.login(newUser, function (err) {
+              if (err) return next(err);
+
+              console.log("After relogin: ");
+              console.info(req.user);
+            });
+            res.redirect("/profile");
           });
         }
       }
