@@ -32,6 +32,6 @@ module.exports = function (app) {
   });
 
   app.get("/profile", isAuthenticated, function (req, res) {
-    res.sendFile(path.join(__dirname, "../views/index.ejs"));
+    res.sendFile(path.join(__dirname, "../public/profile.html"));
   });
 };
