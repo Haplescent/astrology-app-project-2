@@ -228,4 +228,36 @@ $(document).ready(function () {
       }
     }
   });
+  $.get(`/api/profilepic`).then((res) => {
+    console.log(res);
+    console.log(res.image);
+
+    if (res.image) {
+      $("#dashboardprofile").append(`
+        <a  href="/profile">
+          <img src="../uploads/${res.image}" 
+            style=" vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;" 
+            alt="Avatar" 
+            class="avatar">
+      </a>`);
+    } else {
+      $("#dashboardprofile").append(`
+        <a  href="/profile">
+        <img
+        src="./images/Profile.png"
+        style="
+          vertical-align: middle;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        "
+        alt="Avatar"
+        class="avatar"
+    />
+      </a>`);
+    }
+  });
 });
