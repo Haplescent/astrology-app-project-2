@@ -27,6 +27,7 @@ nav {
   position: sticky;
   background-repeat: no-repeat;
   background-size: cover;
+  bottom: -150px;
 }
 
 #brand-logo {
@@ -34,7 +35,7 @@ nav {
   display: inline-block;
   color: #fff;
   font-size: 30px;
-  margin-left: 3vh;
+  margin-left: 10px;
 }
 
 nav ul li a {
