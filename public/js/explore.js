@@ -200,9 +200,11 @@ $(document).ready(function () {
             </div>
           </div>
           <div class="back-card white-text">
+          <div class="text">
           <p>Symbol: ${signs[i].symbol}</p>
           <p class="sign-info">Ruling Planet: ${signs[i].rulingPlanet}</p
             <p id="horoscopeParagraph">${signs[i].description}</p>
+          </div>
           </div>
         </div>
     `);
@@ -219,10 +221,12 @@ $(document).ready(function () {
             </div>
           </div>
           <div class="back-card white-text">
+          <div class="text">
             <p>Symbol: ${signs[i].symbol}</p>
             <p class="sign-info">Ruling Planet: ${signs[i].rulingPlanet}</p
             <p id="horoscopeParagraph">${signs[i].description}</p>
           </div>
+            </div>
         </div>
     `);
       }
@@ -245,19 +249,19 @@ $(document).ready(function () {
       </a>`);
     } else {
       $("#dashboardprofile").append(`
-        <a  href="/profile">
-        <img
-        src="./images/Profile.png"
-        style="
-          vertical-align: middle;
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-        "
-        alt="Avatar"
-        class="avatar"
-    />
-      </a>`);
+      <a  href="/profile">
+      <img
+      src="./images/Profile.png"
+      style="
+        vertical-align: middle;
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+      "
+      alt="Avatar"
+      class="avatar"
+  />
+    </a>`);
     }
   });
 });

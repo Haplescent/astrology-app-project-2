@@ -102,7 +102,7 @@ $(document).ready(function () {
         src="./images/Profile.png"
         style="
           vertical-align: middle;
-          width: 50px;
+          width: 70px;
           height: 50px;
           border-radius: 50%;
         "
