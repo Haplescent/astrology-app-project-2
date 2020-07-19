@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  $(".sidenav").sidenav();
   $.get(`/api/profilepic`).then((res) => {
     console.log(res);
     console.log(res.image);
