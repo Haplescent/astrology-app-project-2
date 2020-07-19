@@ -21,33 +21,28 @@
 
   <link rel="stylesheet" href="./stylesheets/styles.css" />
 
-
-
-  <title>Astrology App</title>
+  <title>astrologica</title>
 </head>
 
 
 <body>
-
   <nav style="padding:0px 10px; position: fixed;">
     <div class="nav-wrapper">
-
-
       <a href="#" class="sidenav-trigger" data-target="mobile-nav">
         <i class="material-icons">menu</i>
       </a>
 
       <ul class="right hide-on-med-and-down ">
-        <li><a href="/profile"><img src="./images/Profile.png" style=" vertical-align: middle;
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;" alt="Avatar" class="avatar"></a></li>
+        <li id="dashboardprofile"></li>
+        <li><a href="/explore">Explore</a></li> 
         <li><a href="/logout">Logout</a></li>
       </ul>
     </div>
   </nav>
 
   <ul class="sidenav" id="mobile-nav">
+    <li><a href="/profile">Profile</a></li>
+    <li><a href="/explore">Explore</a></li>
     <li><a href="/logout">Logout</a></li>
   </ul>
 
@@ -59,11 +54,11 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Astrology App</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <h5 class="white-text">astrologica</h5>
+          <p class="grey-text text-lighten-4">A personalized astrology app created with the user in mind.</p>
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Useful Links</h5>
+          <h5 class="white-text">Developers</h5>
           <ul>
             <li><a class="grey-text text-lighten-3" href=https://github.com/josephtawil>Joseph Tawil Github</a></li>
             <li><a class="grey-text text-lighten-3" href="https://github.com/meianna">Meianna Oeser Github</a></li>
