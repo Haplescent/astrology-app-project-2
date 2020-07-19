@@ -164,16 +164,7 @@ module.exports = function (app) {
     });
   });
 
-<<<<<<< HEAD
- });
-
- app.get("/api/profilepic",(req,res)=>{
-    res.json({image: req.user.image});
- });
-
-=======
   app.get("/api/profilepic", async (req, res) => {
     await res.json({ image: req.user.image });
   });
->>>>>>> fix-profile
 };

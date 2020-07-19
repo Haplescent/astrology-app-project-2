@@ -40,15 +40,6 @@ $(document).ready(function () {
           },
         });
       }
-<<<<<<< HEAD
-        
-      });
-      // $.ajax({
-      //   type: "GET",
-      //   url:`/api/profilepic`
-      // }).then((res)=>console.log(res));      
-=======
     });
   });
->>>>>>> fix-profile
 });

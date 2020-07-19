@@ -32,11 +32,6 @@ module.exports = function (app) {
   });
 
   app.get("/profile", isAuthenticated, function (req, res) {
-<<<<<<< HEAD
-    // res.sendFile(path.join(__dirname, "../views/index.ejs"));
-    res.render("index");
-=======
     res.sendFile(path.join(__dirname, "../public/profile.html"));
->>>>>>> fix-profile
   });
 };
