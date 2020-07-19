@@ -79,8 +79,8 @@ $(document).ready(function () {
         sign: "Aries",
         signLowerCase: "aries",
         dates: "March 21 - April 19",
-        symbol: "The Ram",
-        rulingPlanet: "Mars",
+        symbol: "The Ram  ",
+        rulingPlanet: "Mars  ",
         description:
           "Aries is the first sign of the zodiac, and that’s pretty much how those born under this sign see themselves: first. Aries are the leaders of the pack, first in line to get things going. Whether or not everything gets done is another question altogether, for an Aries prefers to initiate rather than to complete. The leadership displayed by Aries is most impressive, so don’t be surprised if they can rally the troops against seemingly insurmountable odds—they have that kind of personal magnetism.",
       },
@@ -88,8 +88,8 @@ $(document).ready(function () {
         sign: "Taurus",
         signLowerCase: "taurus",
         dates: "April 20 - May 20",
-        symbol: "The Bull",
-        rulingPlanet: "Venus",
+        symbol: "The Bull  \n  ",
+        rulingPlanet: "Venus   ",
         description:
           "Taurus, the second sign of the zodiac and the ruler of the second house, is all about reward. Unlike the Aries love of the game, the typical Taurus personality loves the rewards of the game. Think physical pleasures and material goods, for those born under this sign revel in delicious excess. This zodiac sign is also tactile, enjoying a tender, even sensual, touch.",
       },
@@ -200,15 +200,14 @@ $(document).ready(function () {
             </div>
           </div>
           <div class="back-card white-text">
-          <p>Symbol: ${signs[i].symbol}</p>
-          <p class="sign-info">Ruling Planet: ${signs[i].rulingPlanet}</p
+          <p class="sign-info">Symbol: ${signs[i].symbol}<br><br>Ruling Planet: ${signs[i].rulingPlanet}</p>
             <p id="horoscopeParagraph">${signs[i].description}</p>
           </div>
         </div>
     `);
       } else {
         $("#exploreHoroscope").append(`
-        <div class="card">
+        <div class="card sign-border">
           <div class="front-card">
             <div class="horoscope">
               <img src="./images/${signs[i].signLowerCase}.png">
@@ -219,8 +218,7 @@ $(document).ready(function () {
             </div>
           </div>
           <div class="back-card white-text">
-            <p>Symbol: ${signs[i].symbol}</p>
-            <p class="sign-info">Ruling Planet: ${signs[i].rulingPlanet}</p
+            <p class="sign-info">Symbol: ${signs[i].symbol}<br><br>Ruling Planet: ${signs[i].rulingPlanet}</p>
             <p id="horoscopeParagraph">${signs[i].description}</p>
           </div>
         </div>
