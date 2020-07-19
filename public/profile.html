@@ -11,16 +11,13 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-
-
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
- 
-
+  <link rel="stylesheet" href="./stylesheets/profile.css"/>
 
 
   <title>Astrology App</title>
@@ -47,19 +44,31 @@
   
   
     <div class="bg">
-      <div id ="profile" class="container">
-        <!-- <div class="card">
-          <img src="./images/leo.png"/>
-          
-         <div class="name"> Joseph</div>
+      <div  class="container">
+        <div id ="profile" class="card">
+          <!-- <img  src="<%= typeof file != 'undefined' ? file: '' %>" class="responsive-img"/> -->
+          <span class="card-title"></span>
+        <a id="addprofilepic" class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        <form action="/profile" method="POST" enctype="multipart/form-data">
+              <div class="file-field input-field">
+                <div class="btn grey">
+                  <span>Upload Image</span>
+                  <input name="myImage" type="file">
+                </div>
+                <div class="file-path-wrapper">
+                  <input class="file-path validate" type="text">
+                </div>
+              </div>
+          <button class="btn" type="submit">Upload</button>
+            </form>
+         <!-- <div class="name"> Joseph</div>
           <div class="email">Email: adsgasga@gamil.com</div>
           <div class="password">Password: 3112</div>
           <div class="birthday">Birthday: 09/12/1222</div>
           <button id= "button" class="btn waves-effect waves-light red" type="submit" name="action">Delete
-    <i class="material-icons right">delete_forever</i>
-  </button>
-        </div> -->
-       
+    <i class="material-icons right">delete_forever</i> -->
+  <!-- </button> -->
+        </div>
       </div>
     </div>
 
@@ -69,15 +78,15 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Astrology App</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+          <p class="grey-text text-lighten-4">A personalized astrology app created with the user in mind.</p>
         </div>
         <div class="col l4 offset-l2 s12">
           <h5 class="white-text">Useful Links</h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href=https://github.com/josephtawil>Joseph Tawil Github</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/meianna">Meianna Oeser Github</a></li>
-            <li><a class="grey-text text-lighten-3" href="https://github.com/Haplescent">John Merrit Github</a></li>
             <li><a class="grey-text text-lighten-3" href="https://github.com/darias321">Danielle Arias Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/Haplescent">John Merrit Github</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://github.com/meianna">Meianna Oeser Github</a></li>
+            <li><a class="grey-text text-lighten-3" href=https://github.com/josephtawil>Joseph Tawil Github</a></li>
           </ul>
         </div>
       </div>
@@ -88,7 +97,7 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-
+<script src="./js/profile.js"></script>
 </body>
 
 </html>
