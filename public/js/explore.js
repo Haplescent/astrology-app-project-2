@@ -210,7 +210,7 @@ $(document).ready(function () {
     `);
       } else {
         $("#exploreHoroscope").append(`
-        <div class="card sign-border">
+        <div class="card">
           <div class="front-card">
             <div class="horoscope">
               <img src="./images/${signs[i].signLowerCase}.png">
